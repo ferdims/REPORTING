@@ -1888,7 +1888,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Boundary",
-              "name": "Trust Boundary",
+              "name": "restricted network",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
@@ -1896,17 +1896,31 @@
               "containedElements": []
             },
             "labels": [
-              "Trust Boundary"
+              "restricted network"
             ],
             "id": "6ba2eadb-1b7d-4853-bfbb-2651e4ba1b45",
             "source": {
-              "x": 670,
-              "y": -570
+              "x": 540,
+              "y": -660
             },
             "target": {
-              "x": 870,
-              "y": 220
-            }
+              "x": 520,
+              "y": 320
+            },
+            "vertices": [
+              {
+                "x": 730,
+                "y": -550
+              },
+              {
+                "x": 820,
+                "y": -50
+              },
+              {
+                "x": 660,
+                "y": 230
+              }
+            ]
           }
         ],
         "description": "e-bank STRIDE"
