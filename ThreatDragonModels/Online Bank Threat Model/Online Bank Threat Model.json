@@ -1410,7 +1410,7 @@
             },
             "vertices": [
               {
-                "x": 760,
+                "x": 790,
                 "y": -320
               }
             ]
@@ -1514,12 +1514,12 @@
             },
             "vertices": [
               {
-                "x": 720,
-                "y": -420
+                "x": 750,
+                "y": -390
               },
               {
-                "x": 810,
-                "y": -420
+                "x": 820,
+                "y": -390
               }
             ]
           },
@@ -1570,8 +1570,8 @@
             },
             "vertices": [
               {
-                "x": 310,
-                "y": -230
+                "x": 370,
+                "y": -240
               }
             ]
           },
@@ -1783,6 +1783,10 @@
               {
                 "x": 410,
                 "y": -20
+              },
+              {
+                "x": 320,
+                "y": -20
               }
             ]
           },
@@ -1837,6 +1841,97 @@
                 "y": -100
               }
             ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "web server\n Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              "web server\n Boundary"
+            ],
+            "id": "d5ae57bd-889c-4bbf-affd-e5f80d9194f8",
+            "source": {
+              "x": 100,
+              "y": -510
+            },
+            "target": {
+              "x": 160,
+              "y": 220
+            },
+            "vertices": [
+              {
+                "x": 200,
+                "y": -450
+              },
+              {
+                "x": 380,
+                "y": -190
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              "Trust Boundary"
+            ],
+            "id": "6ba2eadb-1b7d-4853-bfbb-2651e4ba1b45",
+            "source": {
+              "x": 655,
+              "y": -450
+            },
+            "target": {
+              "x": 755,
+              "y": -350
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           }
         ],
         "description": "e-bank STRIDE"
