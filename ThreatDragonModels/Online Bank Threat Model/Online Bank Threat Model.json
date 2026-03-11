@@ -610,7 +610,7 @@
           },
           {
             "position": {
-              "x": 479,
+              "x": 440,
               "y": -88
             },
             "size": {
@@ -981,8 +981,8 @@
           },
           {
             "position": {
-              "x": 961,
-              "y": -43
+              "x": 941,
+              "y": -73
             },
             "size": {
               "width": 120,
@@ -1331,89 +1331,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "DB transaction request",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "DB transaction request"
-            ],
-            "id": "9523859d-8134-41a4-909f-0d86a7d0a110",
-            "source": {
-              "cell": "83636031-b7d9-446c-8281-14e2d91dcc3f"
-            },
-            "target": {
-              "cell": "00d985b1-7826-4612-abbc-fc70b06f55c2",
-              "port": "ac7fa10d-696d-4029-8477-78016c83e170"
-            },
-            "vertices": [
-              {
-                "x": 730,
-                "y": -80
-              }
-            ]
-          },
-          {
-            "shape": "trust-boundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
-              "name": "web server Boundary",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false,
-              "crossingFlows": [
-                "bb2b14ad-2425-4d74-8774-84ed9194ce8d"
-              ],
-              "containedElements": [
-                "84979867-1995-4ec8-b33e-1db28256b76a"
-              ]
-            },
-            "labels": [
-              "web server Boundary"
-            ],
-            "id": "da997e75-9e77-4c25-974d-896c3f2fa823",
-            "source": {
-              "x": 210,
-              "y": 290
-            },
-            "target": {
-              "x": 20,
-              "y": -140
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "confirmation",
               "description": "",
               "outOfScope": false,
@@ -1495,58 +1412,6 @@
               {
                 "x": 760,
                 "y": -320
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "DB transcation response",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "DB transcation response"
-            ],
-            "id": "54d025e9-5974-4f65-a29d-9111412e8767",
-            "source": {
-              "cell": "00d985b1-7826-4612-abbc-fc70b06f55c2",
-              "port": "ac7fa10d-696d-4029-8477-78016c83e170"
-            },
-            "target": {
-              "cell": "83636031-b7d9-446c-8281-14e2d91dcc3f",
-              "port": "77a500d6-9ddc-4e84-831a-df68b56afad7"
-            },
-            "vertices": [
-              {
-                "x": 760,
-                "y": 17
               }
             ]
           },
@@ -1786,6 +1651,110 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
+              "name": "DB transaction request",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "DB transaction request"
+            ],
+            "id": "9523859d-8134-41a4-909f-0d86a7d0a110",
+            "source": {
+              "cell": "83636031-b7d9-446c-8281-14e2d91dcc3f",
+              "port": "21db9ccb-9c92-4638-b7d8-1e1ffe2195a4"
+            },
+            "target": {
+              "cell": "00d985b1-7826-4612-abbc-fc70b06f55c2",
+              "port": "ac7fa10d-696d-4029-8477-78016c83e170"
+            },
+            "vertices": [
+              {
+                "x": 790,
+                "y": -70
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "DB transcation response",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "DB transcation response"
+            ],
+            "id": "54d025e9-5974-4f65-a29d-9111412e8767",
+            "source": {
+              "cell": "00d985b1-7826-4612-abbc-fc70b06f55c2",
+              "port": "ac7fa10d-696d-4029-8477-78016c83e170"
+            },
+            "target": {
+              "cell": "83636031-b7d9-446c-8281-14e2d91dcc3f",
+              "port": "21db9ccb-9c92-4638-b7d8-1e1ffe2195a4"
+            },
+            "vertices": [
+              {
+                "x": 800,
+                "y": -20
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
               "name": "web transaction response",
               "description": "",
               "outOfScope": false,
@@ -1797,9 +1766,7 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": [
-                "da997e75-9e77-4c25-974d-896c3f2fa823"
-              ]
+              "trustBoundaryIds": []
             },
             "labels": [
               "web transaction response"
@@ -1814,8 +1781,8 @@
             },
             "vertices": [
               {
-                "x": 330,
-                "y": -10
+                "x": 410,
+                "y": -20
               }
             ]
           },
@@ -1861,159 +1828,15 @@
               "y": -58
             },
             "target": {
-              "x": 530,
-              "y": -40
+              "cell": "83636031-b7d9-446c-8281-14e2d91dcc3f",
+              "port": "141fcf08-891f-4b14-b5c2-b9befc4fb2f2"
             },
             "vertices": [
               {
-                "x": 350,
-                "y": -90
-              },
-              {
-                "x": 420,
-                "y": -90
+                "x": 370,
+                "y": -100
               }
-            ],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
+            ]
           }
         ],
         "description": "e-bank STRIDE"
