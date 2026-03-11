@@ -139,7 +139,7 @@
                   "severity": "High",
                   "type": "Spoofing",
                   "description": "Threat actors impersonate legitimate users to gain\nunauthorized access.",
-                  "mitigation": "",
+                  "mitigation": "● Gunakan autentikasi multi-faktor (MFA).\n● Implementasikan CAPTCHA.\n● Perbarui token autentikasi secara berkala.",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 9,
@@ -147,7 +147,7 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 2,
+                "spoofing": 3,
                 "repudiation": 0
               }
             }
@@ -1004,7 +1004,7 @@
                   "severity": "High",
                   "type": "Tampering",
                   "description": "Attackers modify or manipulate stored data.",
-                  "mitigation": "",
+                  "mitigation": "○ Gunakan enkripsi untuk data yang tersimpan.\n○ Terapkan pemeriksaan integritas.\n○ Batasi akses hanya untuk personel yang berwenang.",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 13,
@@ -1012,11 +1012,18 @@
                 }
               ],
               "threatFrequency": {
-                "tampering": 2,
+                "tampering": 3,
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 0
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -1845,7 +1852,7 @@
                   "severity": "Medium",
                   "type": "Tampering",
                   "description": "Attackers manipulate HTTP requests.",
-                  "mitigation": "",
+                  "mitigation": "○ Terapkan validasi input dan encoding output.\n○ Gunakan Web Application Firewall (WAF).\n○ Ikuti praktik pengkodean yang aman.",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 10,
@@ -1854,7 +1861,7 @@
               ],
               "trustBoundaryIds": [],
               "threatFrequency": {
-                "tampering": 1,
+                "tampering": 3,
                 "informationDisclosure": 0,
                 "denialOfService": 0
               }
@@ -1917,7 +1924,7 @@
                   "severity": "Medium",
                   "type": "Tampering",
                   "description": "Attackers manipulate HTTP responses.",
-                  "mitigation": "",
+                  "mitigation": "○ Terapkan validasi input dan encoding output.\n○ Gunakan Web Application Firewall (WAF).\n○ Ikuti praktik pengkodean yang aman.",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 11,
@@ -1926,7 +1933,7 @@
               ],
               "trustBoundaryIds": [],
               "threatFrequency": {
-                "tampering": 1,
+                "tampering": 2,
                 "informationDisclosure": 0,
                 "denialOfService": 0
               }
@@ -1989,7 +1996,7 @@
                   "severity": "High",
                   "type": "Information disclosure",
                   "description": "Sensitive data is intercepted or exposed during\ntransmission.",
-                  "mitigation": "",
+                  "mitigation": "○ Gunakan enkripsi untuk data dalam transit.\n○ Hindari mengirim data sensitif dalam parameter URL.\n○ Batasi akses hanya untuk personel yang berwenang.",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 12,
@@ -1999,7 +2006,7 @@
               "trustBoundaryIds": [],
               "threatFrequency": {
                 "tampering": 0,
-                "informationDisclosure": 1,
+                "informationDisclosure": 2,
                 "denialOfService": 0
               }
             },
