@@ -1145,6 +1145,58 @@
               "cell": "4c7e6c57-799c-4805-87d8-558fbb5c9203",
               "port": "141fcf08-891f-4b14-b5c2-b9befc4fb2f2"
             }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 11,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "eca49045-d1e6-4721-935d-2045965718eb",
+            "source": {
+              "x": 350,
+              "y": -310
+            },
+            "target": {
+              "cell": "b7968eb7-03aa-4785-b0a6-f7214d0581c0",
+              "port": "c6d15938-4d40-4eb2-8bd6-583cafa08b6f"
+            },
+            "vertices": [
+              {
+                "x": 280,
+                "y": -260
+              }
+            ]
           }
         ],
         "description": "e-bank STRIDE"
