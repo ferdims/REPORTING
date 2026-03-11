@@ -1813,7 +1813,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "da997e75-9e77-4c25-974d-896c3f2fa823"
+              ]
             },
             "labels": [
               "web transaction response"
@@ -1833,6 +1835,38 @@
                 "y": 40
               }
             ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "web server Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "bb2b14ad-2425-4d74-8774-84ed9194ce8d"
+              ],
+              "containedElements": [
+                "84979867-1995-4ec8-b33e-1db28256b76a"
+              ]
+            },
+            "labels": [
+              "web server Boundary"
+            ],
+            "id": "da997e75-9e77-4c25-974d-896c3f2fa823",
+            "source": {
+              "x": 210,
+              "y": 290
+            },
+            "target": {
+              "x": 20,
+              "y": -140
+            }
           }
         ],
         "description": "e-bank STRIDE"
