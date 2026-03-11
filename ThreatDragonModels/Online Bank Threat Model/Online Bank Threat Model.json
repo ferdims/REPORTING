@@ -1328,7 +1328,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "https request",
+              "name": "http request",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1342,7 +1342,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "https request"
+              "http request"
             ],
             "id": "ff3fa175-2d53-4eae-b5df-11c39900c5fa",
             "source": {
@@ -1355,8 +1355,60 @@
             },
             "vertices": [
               {
-                "x": 320,
+                "x": 310,
                 "y": -265
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "http response",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "http response"
+            ],
+            "id": "2209a165-87f9-4872-a268-b77e825e1240",
+            "source": {
+              "x": 380,
+              "y": -260
+            },
+            "target": {
+              "cell": "9c33d553-2bc7-4fef-9176-b8d48adf99b9",
+              "port": "86d0ab9c-8eb2-4b63-99dd-2055f0a0f7a3"
+            },
+            "vertices": [
+              {
+                "x": 310,
+                "y": -230
               }
             ]
           }
