@@ -38,6 +38,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -121,7 +122,6 @@
               ]
             },
             "id": "6006f10a-fadd-40c3-be0f-3c908d7728f2",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "pelanggan",
@@ -155,6 +155,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -238,7 +239,6 @@
               ]
             },
             "id": "00c772b0-b869-4220-ab4e-fa57f48885b7",
-            "zIndex": 2,
             "data": {
               "type": "tm.Process",
               "name": "sistem\ne-commerce",
@@ -326,7 +326,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "konfirmasi pesanan",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -340,17 +340,23 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "konfirmasi pesanan"
             ],
             "id": "829e0c37-ee48-430f-b3e8-414ee0e22387",
             "source": {
-              "x": 420,
-              "y": -300
+              "cell": "00c772b0-b869-4220-ab4e-fa57f48885b7",
+              "port": "d1cec514-cc48-4644-8da7-44aedc7f11bd"
             },
             "target": {
               "cell": "6006f10a-fadd-40c3-be0f-3c908d7728f2",
               "port": "1c1bf6d3-bf4a-4a0a-aea0-379f01035a00"
-            }
+            },
+            "vertices": [
+              {
+                "x": 290,
+                "y": -280
+              }
+            ]
           }
         ]
       }
