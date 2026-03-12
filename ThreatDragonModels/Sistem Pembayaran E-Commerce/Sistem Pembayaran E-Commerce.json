@@ -1,0 +1,26 @@
+{
+  "version": "2.6.0",
+  "summary": {
+    "title": "Sistem Pembayaran E-Commerce",
+    "owner": "Fernanda Dimas",
+    "description": "Sistem ini mengelola proses pembayaran pelanggan di e-commerce, mulai dari pemilihan metode (Kartu Kredit, E-Wallet) hingga integrasi dengan Payment Gateway dan verifikasi Bank untuk pembaruan status pesanan.",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "id": 0,
+        "title": "DFD Level 1 - Pembayaran",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.6.0",
+        "cells": []
+      }
+    ],
+    "diagramTop": 1,
+    "reviewer": "",
+    "threatTop": 0
+  }
+}
